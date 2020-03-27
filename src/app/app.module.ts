@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { FuncAddComponent } from './func-add/func-add.component';
 import { FuncEditComponent } from './func-edit/func-edit.component';
 import { FuncGetComponent } from './func-get/func-get.component';
-
+import { FuncionarioService } from './funcionario.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { FuncGetComponent } from './func-get/func-get.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [FuncionarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

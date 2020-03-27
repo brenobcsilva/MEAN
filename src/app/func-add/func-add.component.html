@@ -4,6 +4,8 @@
         <div class="col-md-6 col-md-offset-3">
             <div class="form-group">
                 <label>Nome</label>
+
+
                 <input type="text" class="form-control" formControlName="nomeFuncionario" #nomeFuncionario>
               </div>
               <div *ngIf="adicionarFuncionarioForm.controls['nomeFuncionario'].invalid
@@ -17,7 +19,7 @@
 
             <div class="form-group">
                 <label>Cargo</label> 
-                <input type="text" class="form-control" formControlName="cargo">
+                <input type="text" class="form-control" formControlName="cargo" #cargo>
             </div>
             <div *ngIf="adicionarFuncionarioForm.controls['cargo'].invalid
             && (adicionarFuncionarioForm.controls['cargo'].dirty
@@ -32,7 +34,10 @@
             
             <div class="form-group">
                 <label>Numero identificador</label>
-                <input type="text" class="form-control" formControlName="numeroIdentificador">
+
+
+
+                <input type="text" class="form-control" formControlName="numeroIdentificador" #numeroIdentificador>
             </div>
             <div *ngIf="adicionarFuncionarioForm.controls['numeroIdentificador'].invalid
             && (adicionarFuncionarioForm.controls['numeroIdentificador'].dirty
